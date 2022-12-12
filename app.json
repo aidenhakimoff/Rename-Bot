@@ -1,0 +1,48 @@
+{
+    "name": "Rename Bot V1",
+    "description": "Telegram File Renamer Bot ",
+    "logo": "https://te.legra.ph/file/1f26039c36cd9e6be5584.png",
+    "keywords": ["Rename Bot", "Mongo DB"],    
+    "repository": "https://github.com/aidenhakimoff/Rename-Bot",
+    "env": {
+        "API_ID": {
+            "description": "Your APP ID From my.telegram.org ",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash From my.telegram.org ",
+            "value": ""
+        },
+        "FORCE_SUB": {
+            "description": "Your force sub channel user name without [@] ",
+            "value": "",
+            "required": false 
+        },
+        "BOT_TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": ""
+        },
+        "ADMIN": {
+            "description":"Add Your User ID multiple is use space to split"
+        },
+        "DB_URL": {
+            "description": "Your Mongo DB URL Obtained From mongodb.com",
+            "value": ""
+        },
+        "DB_NAME":{ 
+            "description":"Your Mongo DB Database Name ",
+            "value": "titan-bots",
+            "required": false
+        },
+        "START_PIC": {
+            "description": "Your Bot start Pic",
+            "value": "",
+            "required": false
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
